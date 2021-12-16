@@ -1,0 +1,33 @@
+#INGEST
+bootcamp <- read.csv('bootcampanalysis.csv', header = TRUE, sep=',')
+
+
+#scatter plot - hypothesis 3 - understanding of data
+
+plot(bootcamp$howlikelytoenrolonbootcamp~bootcamp$understandingofdatanalysis)
+
+abline(lm(bootcamp$howlikelytoenrolonbootcamp~bootcamp$understandingofdatanalysis,bootcamp))
+
+lm(howlikelytoenrolonbootcamp~understandingofdatanalysis,bootcamp)
+
+summary(lm(howlikelytoenrolonbootcamp~understandingofdatanalysis,bootcamp))
+
+#hypothesis 4 - job satisfaction 
+
+plot(bootcamp$howlikelytoenrolonbootcamp~bootcamp$age)
+
+abline(lm(bootcamp$howlikelytoenrolonbootcamp~bootcamp$age,bootcamp))
+
+lm (howlikelytoenrolonbootcamp~age,bootcamp)
+
+summary (lm(howlikelytoenrolonbootcamp~age,bootcamp))
+
+#hypothesis 5 - Job Satisfaction chart 
+
+plot(bootcamp$howlikelytoenrolonbootcamp~bootcamp$jobsatisfaction)
+
+abline(lm(bootcamp$howlikelytoenrolonbootcamp~bootcamp$jobsatisfaction,bootcamp))
+
+lm(howlikelytoenrolonbootcamp~jobsatisfaction,bootcamp)
+
+summary(lm(howlikelytoenrolonbootcamp~jobsatisfaction,bootcamp))
